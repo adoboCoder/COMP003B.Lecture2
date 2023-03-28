@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var hobbies = new List<string>()
+    {
+        "hobby1",
+        "hobby2",
+        "hobby3"
+    };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!-- manual way -->
+<p>hobby1</p>
+<p>hobby2</p>
+<p>hobby3</p>
+
+<!-- programmatic way -->
+@foreach (var hobby in hobbies)
+{
+    <p>@hobby</p>
+}
